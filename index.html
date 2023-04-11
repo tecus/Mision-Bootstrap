@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.cdnfonts.com/css/segoe-ui-4" rel="stylesheet">
+    <title>Mision bootstrap</title>
+</head>
+<body>
+
+    <header class="navbar navbar-expand-lg fs-4 mb-5">
+        <div class="container-fluid">
+                <a class="text-decoration-none text-white  ms-4 fs-2" href="#">Logo</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navegacion">
+                    <img src="./img/menu.svg" alv="Icono Menu">
+                </button>
+                </div>
+                <div class="collapse navbar-collapse me-4" id="navegacion">
+                    <ul class="navbar-nav ms-5 d-flex gap-lg-4">
+                        <li class="nav-item"><a class="nav-link active  text-white" aria-current="page" href="#">Inicio</a></li>
+                    <li class="nav-item dropdown"><a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="true">Contenido</a>
+                        <ul class="dropdown-menu" data-bs-popper="static">
+                            <li><a class="dropdown-item" href="#about">Acerca</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#opiniones">Opiniones</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#preguntas">Preguntas Frecuentes</a></li>
+                        </ul>
+                    </li>
+                    <li><button type="button" class="btn text-light fs-5 text-white ps-0 mt-lg-1" data-bs-toggle="modal" data-bs-target="#BtnModal">Registro</button></li>
+                </ul>
+                </div>
+    </header>
+
+    <div class="modal fade" id="BtnModal" tabindex="-1" aria-labelledby="BtnModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+    <div class="modal-content border border-dark">
+        <div class="modal-header border-bottom border-dark">
+        <h1 class="modal-title fs-5" id="BtnModalLabel">Registro</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <p class="mb-3"> Ingresa los datos para cominucarnos pronto</p>
+        <form>
+            <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Nombre</label>
+            <input type="text" class="form-control" id="recipient-name">
+            </div>
+            <div class="mb-3">
+                <label for="recipient-name" class="col-form-label">Apellido</label>
+                <input type="text" class="form-control" id="recipient-name">
+            </div>
+            <div class="mb-3">
+                <label for="recipient-name" class="col-form-label">Correo</label>
+                <input type="text" class="form-control" id="recipient-name">
+            </div>
+            <div class="mb-3">
+                <label for="recipient-name" class="col-form-label">Telefono</label>
+                <input type="text" class="form-control" id="recipient-name">
+            </div>
+        </form>
+        </div>
+        <div class="modal-footer border-top border-dark">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Enviar</button>
+        </div>
+    </div>
+    </div>
+    </div>
+
+    <section class="container py-0 py-lg-5 d-flex justify-content-center" id="about">
+        <div class="row d-flex gap-5 justify-content-center">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-5 col-xxl-5 d-flex flex-column justify-content-center">
+                <h2 class="titulo">COEX - Desarrollo de Talento TI</h2>
+                <p class="mt-2 mt-lg-4 mt-xl-4 mt-xxl-4 fs-5 text">Todo el mundo debería saber programar <span class="textwithout">porque te enseña a pensar - Steve Jobs</span></p>
+                <p class="mt-5 mt-lg-4 mt-xl-4 mt-xxl-4 mb-5 lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit Ut et massa. Aliquarm in hendrerit</p>
+                <div class="d-flex justify-content-center">
+                    <button type="button" class="btn text-white boton_color px-4" data-bs-toggle="modal" data-bs-target="#BtnModal">Contactanos</button></div>
+            </div>
+            <div class="col-10 col-sm-10 col-md-10 col-lg-10 col-xl-4 col-xxl-4 p-0 d-flex justify-content-center">
+                <img class="img-fluid w-100" src="img/imagen.webp" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="container pt-5 py-0 py-lg-5">
+        <h3 class="text-center pb-3"><strong>¿Que opinan nuestros(as) clientes?</strong></h3>
+        
+        <div class="row d-flex justify-content-center gap-5 " id="opiniones">
+            <div class=" col-sm-8 col-md-12 col-lg-12 col-xl-3 col-xxl-3 mb-0 mb-sm-5 mb-md-5 mb-lg-5 mb-xl-5 mb-xxl-5">
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                    <img class="w-50 mb-3" src="img/iconfinder-4-avatar-2754580_120522.svg" alt="Icon_avatar">
+                    <h5 class="text-center mb-4"><strong>Tania Cruz</strong></h5>
+                    <div class="d-flex gap-3 mb-3">
+                        <img class="w-20" src="img/star-fill.svg" alt="Icono-star">
+                        <img src="img/star-fill.svg" alt="Icono-star">
+                        <img src="img/star-fill.svg" alt="Icono-star">
+                        <img src="img/star-fill.svg" alt="Icono-star">
+                        <img src="img/star-fill.svg" alt="Icono-star">
+                    </div>
+                    <p class="text-center">Lorem ipsum dolor sit amet consecteur adipiscing elit Ut et.</p>
+                </div>
+            </div>
+
+            <div class=" col-sm-8 col-md-12 col-lg-10 col-xl-3 col-xxl-3 mb-0 mb-sm-5 mb-md-5 mb-lg-5 mb-xl-5 mb-xxl-5">
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                    <img class="w-50 mb-3" src="img/iconfinder-12-avatar-2754577_120517.svg" alt="Icon_avatar">
+                    <h5 class="text-center mb-4"><strong>Ramón Viña</strong></h5>
+                    <div class="d-flex gap-3 mb-3">
+                        <img class="w-20" src="img/star-fill.svg" alt="Icono-star">
+                        <img src="img/star-fill.svg" alt="Icono-star">
+                        <img src="img/star-fill.svg" alt="Icono-star">
+                        <img src="img/star-fill.svg" alt="Icono-star">
+                        <img src="img/star-fill.svg" alt="Icono-star">
+                    </div>
+                    <p class="text-center">Lorem ipsum dolor sit amet consecteur adipiscing elit Ut et.</p>
+                </div>
+            </div>
+
+            <div class="col-sm-8 col-md-12 col-lg-10 col-xl-3 col-xxl-3 mb-0 mb-sm-5 mb-md-5 mb-lg-5 mb-xl-5 mb-xxl-5">
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                    <img class="w-50 mb-3" src="img/iconfinder-9-avatar-2754584_120518.svg" alt="Icon_avatar">
+                    <h5 class="text-center mb-4"><strong>Laura Acosta</strong></h5>
+                    <div class="d-flex gap-3 mb-3">
+                        <img class="w-20" src="img/star-fill.svg" alt="Icono-star">
+                        <img src="img/star-fill.svg" alt="Icono-star">
+                        <img src="img/star-fill.svg" alt="Icono-star">
+                        <img src="img/star-fill.svg" alt="Icono-star">
+                        <img src="img/star-fill.svg" alt="Icono-star">
+                    </div>
+                    <p class="text-center">Lorem ipsum dolor sit amet consecteur adipiscing elit Ut et.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="container my-5">
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item" id="preguntas">
+                <h2 class="accordion-header">
+                <button class="accordion-button border border-dark rounded-0 bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                Pregutan 1
+                </button>
+                </h2>
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show  border-dark border-start border-end border-bottom">
+                <div class="accordion-body">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima, sequi. Dolorem debitis minus commodi fugit quisquam doloribus, eos dolor accusamus, vitae cum, et totam vero quasi iure pariatur! Ea, quo? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic vitae expedita fuga, quaerat placeat obcaecati atque natus temporibus optio? Vero fuga beatae aut sapiente perspiciatis labore ipsam est, nemo voluptatibus?</p>
+            </div>
+            </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed  border-dark border-bottom border-start border-end bg-white text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                Pregunta 2
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse border-dark border-start border-end border-bottom">
+                <div class="accordion-body">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima, sequi. Dolorem debitis minus commodi fugit quisquam doloribus, eos dolor accusamus, vitae cum, et totam vero quasi iure pariatur! Ea, quo? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic vitae expedita fuga, quaerat placeat obcaecati atque natus temporibus optio? Vero fuga beatae aut sapiente perspiciatis labore ipsam est, nemo voluptatibus?</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed border-dark border-bottom border-start border-end bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                Pregunta 3
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse border-dark border-start border-end border-bottom">
+                <div class="accordion-body">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima, sequi. Dolorem debitis minus commodi fugit quisquam doloribus, eos dolor accusamus, vitae cum, et totam vero quasi iure pariatur! Ea, quo? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic vitae expedita fuga, quaerat placeat obcaecati atque natus temporibus optio? Vero fuga beatae aut sapiente perspiciatis labore ipsam est, nemo voluptatibus?</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed border-dark border-bottom border-start border-end bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                  Pregunta 4
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse border-dark border-start border-end border-bottom">
+                  <div class="accordion-body">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima, sequi. Dolorem debitis minus commodi fugit quisquam doloribus, eos dolor accusamus, vitae cum, et totam vero quasi iure pariatur! Ea, quo? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic vitae expedita fuga, quaerat placeat obcaecati atque natus temporibus optio? Vero fuga beatae aut sapiente perspiciatis labore ipsam est, nemo voluptatibus?</p>
+                  </div>
+                </div>
+              </div>
+          </div>
+    </div>
+
+    <section class="pt-0 pt-sm-5 pt-md-5 pt-lg-5 pt-xl-5 pt-xxl-5 py-5">
+    </section>
+
+    <footer class="mt-0 mt-lg-5 d-flex ms-auto me-auto">
+        <div class="col-11 row d-flex justify-content-between ms-auto me-auto mb-3">
+            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-3 col-xxl-3 mb-5 me-2">
+                <img src="./img/logo - coex.svg" alv="" class="w-75 d-flex ms-auto me-auto mb-3">
+                <p class="text-center fs-5">&#169; Jesid Cardenas</p>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-2 col-xxl-2 mb-5">
+                <p class="text-center text-xl-start text-xxl-start"><strong>Empresa</strong></p>
+                <p class="m-0 text-center text-xl-start text-xxl-start">Acerca</p>
+                <p class="m-0 text-center text-xl-start text-xxl-start">Servicio</p>
+                <p class="m-0 text-center text-xl-start text-xxl-start">Gerencia</p>
+                <p class="m-0 text-center text-xl-start text-xxl-start">Fabrica Software</p>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-2 col-xxl-2 mb-5">
+                <p class="text-center text-xl-start text-xxl-start"><strong>Educación</strong></p>
+                <p class="m-0 text-center text-xl-start text-xxl-start">Selección</p>
+                <p class="m-0 text-center text-xl-start text-xxl-start">Módulos</p>
+                <p class="m-0 text-center text-xl-start text-xxl-start">Preguntas</p>
+                <p class="m-0 text-center text-xl-start text-xxl-start">Mantenimiento</p>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-2 col-xxl-2 mb-5">
+                <p class="text-center text-xl-start text-xxl-start"><strong>Contacto</strong></p>
+                <p class="m-0 text-center text-xl-start text-xxl-start">Dirección: Call 35 # 32 - 85</p>
+                <p class="m-0 text-center text-xl-start text-xxl-start">Teléfono: (+57) 311 883 9480</p>
+                <p class="m-0 text-center text-xl-start text-xxl-start">Correo: gerencia@coex.com.co</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+</html>

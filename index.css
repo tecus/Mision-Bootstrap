@@ -1,0 +1,29 @@
+@import url('https://fonts.cdnfonts.com/css/segoe-ui-4');
+
+:root{
+    --azul:#000086;
+    --fondo:#D9D9D9;
+    font-family: 'Segoe UI', sans-serif;
+}
+body{           
+    background-color: var(--fondo)
+}
+.titulo{
+    letter-spacing: 0.7px;
+    font-weight:700;
+}
+header{
+    background-color: var(--azul);
+}
+.text{
+    word-spacing: 20px;
+}
+.textwithout{
+    word-spacing: 2px;
+}
+.boton_color{
+    background-color: var(--azul);
+}
+.lorem{
+    font-weight: 400;
+}
